@@ -1,0 +1,137 @@
+┌──(cr㉿Lappy)-[/mnt/d/new-DAA/LAB 2]
+└─$ ./a.out
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 1
+Enter data to append: 2
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 1
+Enter data to append: 4
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 1
+Enter data to append: 6
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 1
+Enter data to append: 3
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 1
+Enter data to append: 5
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 2
+Linked List:
+2 -> 4 -> 6 -> 3 -> 5 -> NULL
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 3
+Linked List reversed.
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 2
+Linked List:
+5 -> 3 -> 6 -> 4 -> 2 -> NULL
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 5
+Enter position to delete (0-based index): 2
+Node at position 2 deleted.
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 2
+Linked List:
+5 -> 3 -> 4 -> 2 -> NULL
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 4
+Linked List deleted.
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 2
+Linked List:
+List is empty.
+
+Menu:
+1. Append to Linked List
+2. Print Linked List
+3. Reverse Linked List
+4. Delete Entire Linked List
+5. Delete Node at Position
+6. Exit
+Enter your choice: 6
+Exiting program.
