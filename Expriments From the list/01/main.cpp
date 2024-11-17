@@ -56,22 +56,30 @@ int main() {
     Node* root = nullptr;
     int choice, value;
     while (true) {
-        cout << "\n1. Insert (Recursive)\n2. Insert (Iterative)\n3. Display (Inorder)\n4. Exit\n";
+        cout << "\n---- MENU ---- \n1. Insert (Recursive)\n2. Insert (Iterative)\n3. Display (Inorder)\n4. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
         if (choice == 4)
             break;
-        cout << "Enter value to insert: ";
-        cin >> value;
-        if (choice == 1)
-            root = insertRecursive(root, value);
-        else if (choice == 2)
-            root = insertIterative(root, value);
-        else
-            cout << "Invalid choice!";
+        switch (choice) {
+            case 1:
+                cout << "Enter value to insert: ";
+                cin >> value;
+                root = insertRecursive(root, value);
+                break;
+            case 2:
+                cout << "Enter value to insert: ";
+                cin >> value;
+                root = insertIterative(root, value);
+                break;
+            case 3:
+                cout << "Inorder Traversal: ";
+                inorderTraversal(root);
+                cout << endl;
+                break;
+            default:
+                cout << "Invalid choice!" << endl;
+        }
     }
-    cout << "Inorder Traversal: ";
-    inorderTraversal(root);
-    cout << endl;
     return 0;
 }

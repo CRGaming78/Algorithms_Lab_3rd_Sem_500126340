@@ -77,3 +77,4 @@ int main() {
     bellmanFord(V, E, edges, src);
     return 0;
 }
+// One thing to remember Dijkstra algorithm can't handle negative values

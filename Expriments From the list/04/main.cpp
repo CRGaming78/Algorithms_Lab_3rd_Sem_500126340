@@ -1,41 +1,36 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
 using namespace std;
 
 struct Activity {
-    int id;
-    int start;
-    int finish;
+    int start, finish;
 };
 
-bool activityComparator(Activity a, Activity b) {
+bool compare(Activity a, Activity b) {
     return a.finish < b.finish;
 }
 
-void activitySelection(vector<Activity> &activities) {
-    sort(activities.begin(), activities.end(), activityComparator);
-    cout << "Selected Activities: ";
+void activitySelection(Activity activities[], int n) {
+    sort(activities, activities + n, compare);
+    cout << "Selected activities (start, finish):\n";
     int lastSelected = 0;
-    cout << "Activity" << activities[lastSelected].id << " ";
-    for (int i = 1; i < activities.size(); i++) {
+    cout << "(" << activities[0].start << ", " << activities[0].finish << ")\n";
+    for (int i = 1; i < n; i++) {
         if (activities[i].start >= activities[lastSelected].finish) {
-            cout << "Activity" << activities[i].id << " ";
+            cout << "(" << activities[i].start << ", " << activities[i].finish << ")\n";
             lastSelected = i;
         }
     }
-    cout << endl;
 }
-
 int main() {
     int n;
     cout << "Enter the number of activities: ";
     cin >> n;
-    vector<Activity> activities(n);
-    cout << "Enter the activity id, start time, and finish time:\n";
+    Activity activities[n];
     for (int i = 0; i < n; i++) {
-        cin >> activities[i].id >> activities[i].start >> activities[i].finish;
+        cout << "Enter start and finish time for activity " << i + 1 << ": ";
+        cin >> activities[i].start >> activities[i].finish;
     }
-    activitySelection(activities);
+    activitySelection(activities, n);
     return 0;
 }
